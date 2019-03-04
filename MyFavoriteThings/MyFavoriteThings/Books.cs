@@ -7,9 +7,17 @@ namespace MyFavoriteThings
     class Books
     {
         // ------------ PROPERTIES ------------
-        public string Name { get; set; }
-        public string Author { get; set; }
-        public BookGenre Genre { get; set; }
+        public string Name { get; }
+        public string Author { get; }
+        public BookGenre Genre { get; }
+
+        // ------------ CONSTRUCTOR ------------
+        public Books(string name, string author, BookGenre genre)
+        {
+            Name = name;
+            Author = author;
+            Genre = genre;
+        }
 
         // ------------ METHODS ------------
         public void bestBook()

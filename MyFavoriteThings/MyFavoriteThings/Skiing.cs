@@ -7,10 +7,19 @@ namespace MyFavoriteThings
     class Skiing
     {
         // ------------ PROPERTIES ------------
-        public string Name { get; set; }
-        public string City { get; set; }
-        public SkiingState State { get; set; }
-        public SkiType Type { get; set; }
+        public string Name { get; }
+        public string City { get; }
+        public SkiingState State { get; }
+        public SkiType Type { get; }
+
+        // ------------ CONSTRUCTOR ------------
+        public Skiing(string name, string city, SkiingState state, SkiType type)
+        {
+            Name = name;
+            City = city;
+            State = state;
+            Type = type;
+        }
 
         // ------------ METHODS ------------
         public void skiOrBoard()

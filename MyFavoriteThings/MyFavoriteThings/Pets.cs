@@ -7,10 +7,19 @@ namespace MyFavoriteThings
     class Pets
     {
         // ------------ PROPERTIES ------------
-        public string Name { get; set; }
-        public string Age { get; set; }
-        public string Color { get; set; }
-        public PetType Type { get; set; }
+        public string Name { get; }
+        public int Age { get; }
+        public string Color { get; }
+        public PetType Type { get; }
+
+        // ------------ CONSTRUCTOR ------------
+        public Pets(string name, int age, string color, PetType type)
+        {
+            Name = name;
+            Age = age;
+            Color = color;
+            Type = type;
+        }
 
         // ------------ METHODS ------------
         public void fetch()

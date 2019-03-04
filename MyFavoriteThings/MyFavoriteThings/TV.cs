@@ -7,9 +7,17 @@ namespace MyFavoriteThings
     class TV
     {
         // ------------ PROPERTIES ------------
-        public string Name { get; set; }
-        public string Actors { get; set; }
-        public TVNetwork Network { get; set; }
+        public string Name { get; }
+        public string Actors { get; }
+        public TVNetwork Network { get; }
+
+        // ------------ CONSTRUCTOR ------------
+        public TV(string name, string actors, TVNetwork network)
+        {
+            Name = name;
+            Actors = actors;
+            Network = network;
+        }
 
         // ------------ METHODS ------------
         public void bestNetwork()
